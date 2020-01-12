@@ -1,10 +1,10 @@
 ---
-title: "Roadmap"
+title: "Kuntur Project Roadmap"
 date: 2020-01-11T18:15:40-04:00
 draft: false
+type: "document"
+layout: "single"
 ---
-
-# Kuntur Project Roadmap
 
 ## Introduction
 

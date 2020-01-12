@@ -1,10 +1,8 @@
 ---
-title: "Tooling"
+title: "Kuntur Project Tools"
 date: 2020-01-11T18:15:47-04:00
 draft: false
 ---
-
-# Kuntur Project Tools
 
 ## Introduction
 

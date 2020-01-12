@@ -13,7 +13,3 @@ handlers:
 - url: /(.*)/
   static_files: www/\1/index.html
   upload: www/*
-
-#
-# - url: /
-#   static_dir: www/

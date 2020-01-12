@@ -1,10 +1,8 @@
 ---
-title: "Requirements"
+title: "Kuntur Project Requirements"
 date: 2020-01-11T18:15:32-04:00
 draft: false
 ---
-
-# Kuntur Project Requirements
 
 ## Introduction
 
