@@ -3,9 +3,6 @@ title: "Hello World"
 date: 2020-01-11T11:00:11-04:00
 draft: false
 ---
-![alt text](https://avatars3.githubusercontent.com/u/59767822?s=400&u=44642833470a046df8e77d23b4b2a60fc28f1216&v=4)
-
-
 
 # Hi.
 

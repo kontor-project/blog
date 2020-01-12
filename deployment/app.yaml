@@ -3,10 +3,17 @@ api_version: 1
 threadsafe: true
 
 handlers:
+
+# main page
 - url: /
   static_files: www/index.html
   upload: www/index.html
 
-- url: /(.*)
-  static_files: www/\1
-  upload: www/(.*)
+# generated content
+- url: /(.*)/
+  static_files: www/\1/index.html
+  upload: www/*
+
+#
+# - url: /
+#   static_dir: www/

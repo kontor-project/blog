@@ -1,8 +1,6 @@
-baseURL = "https://kuntur-project.appspot.com"
+baseURL = "https://kontor.ca"
 languageCode = "en-us"
 title = "Kontor Development Blog"
 theme = "kontor-theme"
 author = "mregger"
-
-[indexes]
-  articles = "articles"
+canonifyURLs = true
