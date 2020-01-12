@@ -289,6 +289,11 @@ h6,
     float: left;
   }
 
+  .site-logo {
+    align-content: center;
+    width: inherit;
+  }
+
   .meta,
   .post-meta {
     margin: 0;
@@ -371,6 +376,11 @@ h6,
 
   .site-header .site-title {
     float: center;
+  }
+
+  .site-logo {
+    align-content: center;
+    width: inherit;
   }
 
   .site-header .site-nav {

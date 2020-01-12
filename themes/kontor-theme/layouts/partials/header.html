@@ -1,10 +1,14 @@
 <header class="site-header px2 px-responsive">
   <div class="mt2 wrap">
     <div class="measure">
-      <a href="{{ .Site.BaseURL }}{{ .Site.LanguagePrefix }}" class="site-title">{{ .Site.Title }}</a>
+      <a href="{{ .Site.BaseURL }}{{ .Site.LanguagePrefix }}" class="site-title">{{ .Site.Title }}
+      </a>
       <nav class="site-nav right">
       {{ partial "navigation.html" . }}
       </nav>
+      <a href="{{ .Site.BaseURL }}{{ .Site.LanguagePrefix }}" class="site-logo">
+        <img src="https://avatars3.githubusercontent.com/u/59767822?s=400&u=44642833470a046df8e77d23b4b2a60fc28f1216&v=4" width="250" height="200"/>
+      </a>
       <div class="clearfix"></div>
     </div>
   </div>
