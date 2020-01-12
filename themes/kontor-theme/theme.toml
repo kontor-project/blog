@@ -1,0 +1,5 @@
+name = "kontor-theme"
+description = "A simple theme based on pixyll https://github.com/azmelanar/hugo-theme-pixyll"
+license = "MIT"
+tags = ["blog", "personal", "search", "responsive", "minimal"]
+min_version = 0.25

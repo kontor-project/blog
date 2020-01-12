@@ -1,7 +1,7 @@
 baseURL = "https://kuntur-project.appspot.com"
 languageCode = "en-us"
 title = "Kontor Development Blog"
-theme = "pixyll"
+theme = "kontor-theme"
 author = "mregger"
 
 [indexes]
