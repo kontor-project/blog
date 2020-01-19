@@ -4,9 +4,7 @@ date: 2020-01-12T11:00:11-04:00
 draft: false
 ---
 
-# Hi.
-
-This is the first blog post in a series documenting the conception, prototyping, and construction of the world's first open source electric motorglider. To start, let me first introduce myself, and the project.
+Hi. This is the first blog post in a series documenting the conception, prototyping, and construction of the world's first open source electric motorglider. To start, let me first introduce myself, and the project.
 
 ## Who Am I
 

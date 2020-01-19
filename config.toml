@@ -1,6 +1,10 @@
-baseURL = "https://kontor.ca"
-languageCode = "en-us"
-title = "Kontor Development Blog"
-theme = "kontor-theme"
 author = "mregger"
+baseURL = "https://kontor.ca"
 canonifyURLs = true
+languageCode = "en-us"
+theme = "kontor-theme"
+title = "Kontor Development Blog"
+
+[params]
+  google_analytics_id="UA-156253687-1"
+  splash_image_url="https://raw.githubusercontent.com/kontor-project/design/master/openVSP/screenshot.png"
