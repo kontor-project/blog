@@ -7,3 +7,4 @@ title = "Kontor Development Blog"
 
 [params]
   google_analytics_id="UA-156253687-1"
+  splash_image_url="https://raw.githubusercontent.com/kontor-project/design/master/openVSP/screenshot.png"

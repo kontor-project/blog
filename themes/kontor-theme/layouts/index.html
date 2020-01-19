@@ -4,15 +4,18 @@
     {{ if isset .Site.Params "description" }}
     <meta name="description" content="{{ .Site.Params.description }}">
     {{ end }}
+    {{ if isset .Site.Params "splash_image_url" }}
     <div class="post p2 p-responsive wrap">
       <div class="measure">
         <div class="home">
           <div class="posts">
-            <img src="https://raw.githubusercontent.com/kontor-project/design/master/openVSP/screenshot.png" width="70%" height="70%"/>
+            <img src={{ .Site.Params.splash_image_url }} width="70%" height="70%"/>
+            <!-- <img src="https://raw.githubusercontent.com/kontor-project/design/master/openVSP/screenshot.png" width="70%" height="70%"/> -->
           </div>
         </div>
       </div>
     </div>
+    {{ end }}
     <div class="post p2 p-responsive wrap" role="main">
         <div class="measure">
             <div class="home">
