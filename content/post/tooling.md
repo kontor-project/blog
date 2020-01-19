@@ -34,3 +34,5 @@ Here are lists of tools used for various purposes
 
 * [FreeCAD](https://www.freecadweb.org/): for 3D part design, and easy integration with python
 * [OpenVSP](http://openvsp.org/): for 3D model simulations
+
+For more information on the project timeline, checkout the [roadmap](/post/roadmap/) page. For more information on the official project requirements, checkout the [requirements](/post/requirements/) page.
