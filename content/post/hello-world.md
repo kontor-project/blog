@@ -30,4 +30,6 @@ So to me it makes perfect sense to develop an airplane that can fly on electric 
 
 Over time, I hope to hear from fellow pilots, homebuilt aircraft builders, fellow programmers, and airspace enthusiasts, who are interested in seeing this project take flight (see what I did there?)
 
+See my [next](/post/using-git-version-control-to-design-an-airplane) post 🙂
+
 - by Eduardo"
