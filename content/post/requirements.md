@@ -48,4 +48,4 @@ These requirements focus on the project structure
 
 * monetize the project upon completion of the first aircraft
 
-For more information on the timeline of the project, check out he [roadmap](/post/roadmap/) page. For more information on the tools chosen to create the project, check out he [tooling](/post/tooling) page.
+For more information on the timeline of the project, check out he [roadmap](/post/roadmap/) page. For more information on the tools chosen to create the project, check out he [tooling](/post/tooling/) page.
