@@ -132,6 +132,6 @@ Yes, absolutely. In fact, I have a [world in Minecraft](https://github.com/mregg
 
 #### Thanks!
 
-See my [previous](/post/hello-world) post 🙂
+See my [previous](/post/hello-world/) post 🙂
 
 - by Eduardo"
