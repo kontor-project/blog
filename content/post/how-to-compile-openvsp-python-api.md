@@ -28,7 +28,7 @@ The next dependencies are bundled with OpenVSP, but I chose to use those install
 * glew (install it from your package manager)
 * cminpack (install it from your package manager, or compile it if your OS doesn't offer it)
 
-I've no idea what most of them do, so don't ask. Once those are installed, we can start he compilation process. For reasons you'll discover, I'm going to set everything up in my user's directory (paths will get very hairy):
+I've no idea what most of them do, so don't ask. Once those are installed, we can start the compilation process. For reasons you'll discover, I'm going to set everything up in my user's directory (paths will get very hairy):
 
 ```bash
 $ pwd
