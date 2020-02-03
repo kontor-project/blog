@@ -4,7 +4,7 @@ date: 2020-02-02T15:09:38-04:00
 draft: false
 ---
 
-So you want to get dirty with OpenVSP? That's pretty ambitious. Being able to modify our models programatically can be very useful when using scripting methods. However, this is also not as easy as I thought it would be... so I decided to make a post about it. Let's go over the steps I went through to get OpenVSP accessible to my python scripts. Note: I did this on a UNIX based OS, so it probably won't help Windows users.
+So you want to get dirty with OpenVSP? That's pretty ambitious. Being able to modify your models programatically can be very useful when using scripting methods. However, this is also not as easy as I thought it would be... so I decided to make a post about it. Let's go over the steps I went through to get OpenVSP accessible to your python scripts. Note: I did this on a UNIX based OS, so it probably won't help Windows users.
 
 # Compiling OpenVSP
 
@@ -28,13 +28,11 @@ The next dependencies are bundled with OpenVSP, but I chose to use those install
 * glew (install it from your package manager)
 * cminpack (install it from your package manager, or compile it if your OS doesn't offer it)
 
-I've no idea. Once those are installed, we can start he compilation process. For reasons you'll discover, I'm going to set everything up in my user's directory (paths will get very hairy):
+I've no idea what most of them do, so don't ask. Once those are installed, we can start he compilation process. For reasons you'll discover, I'm going to set everything up in my user's directory (paths will get very hairy):
 
 ```bash
 $ pwd
 /home/mregger/
-$ mkdir openvsp
-$ cd openvsp
 ```
 
 Now let's start by cloning the OpenVSP repository:
@@ -87,7 +85,11 @@ Note that I pointed my build to python 3.8, which is what I would like to use. Y
 make
 ```
 
-This will take a while, so let's go do something else.
+This will take a while, so let's go do something else. We have about 15min, so that should give us enough time to make a coffee (and then drink it)
+
+# Making a Mocha
+
+It's Sunday afternoon, I don't need the boldness of an espresso. Let's make a Mocha. I'm going to start by preparing the chocolate syrup by melting about half a handful of chocolate chips. I like bitterness but because coffee is already bitter, I'm going to go with milk chocolate chips. We put them in the microwave with a little splash of water to help them melt, and melt them (about 30 seconds I think). Then, let's grind some coffee. Today I have some Guatemalan dark roast, roasted by a local coffee shop. It's very nice, but a little bitter (even for a dark roast). Let's put in enough coffee to cover the grinder blades (I use a generic seed grinder. Sue me). That should be something like 10g-ish. Once super fine, we can put the ground coffee in a double shot basket and lock that basket into the machine, which we've been preheating since we decided to have a coffee. We pour the espresso shot on top of the melted chocolate syrup and stir the contents violently. Without turning the machine off, let us put about 100g of fatty milk in a steaming cup. We steam the milk and pour about half of it on the coffee, stirring less violently this time. Then we can add the rest of the foam to the coffee, and attempt to make some fancy latte art (and fail miserably). By this time, our compilation should be done (or crashed horrendously).
 
 # After The Compilation
 
@@ -119,7 +121,7 @@ cmake_install.cmake  Makefile     python_api.py  vsp.py
 CTestTestfile.cmake  __pycache__  vsp_g.py       _vsp.so
 ```
 
-And there it is. You'll notice that it is in a bit of an awkward place there, and it won't be fun to type that path in every time we want to import it. We need to move this stuff. Thankfully, none of the files depend on being where they are, so we can move them out of there without breaking anything. When we run `pip install` python likes to install packages in `/usr/lib/pythonX.Y/site-packages/`. We could just install everything there and be done with it. But that's not a good idea, because these packages are managed by `pip`, and we'd like to keep it that way. Also, my system purges that directory when a new python version comes out (yay Arch Linux), and we don't want to repeat this every time python updates. So what I will do instead, is find a nice and quiet little spot, where I can setup a python environment. This will act like a little bubble protecting the project's dependencies from literally anything (except coffee spills). Let's install `virtualenv` and navigate to where I want to work on the aircraft:
+And there it is. You'll notice that it is in a bit of an awkward place there, and it won't be fun to type that path in every time we want to import it. We need to move this stuff. Thankfully, none of the files need to be where they are, so we can move them out of there without breaking anything. When we run `pip install` python likes to install packages in `/usr/lib/pythonX.Y/site-packages/`. We could just install everything there and be done with it. But that's not a good idea, because these packages are managed by `pip`, and we'd like to keep it that way. Also, my system purges that directory when a new python version comes out (yay Arch Linux), and we don't want to repeat this every time python updates. So what I will do instead, is find a nice and quiet little spot, where I can setup a python environment. This will act like a little bubble protecting the project's dependencies from literally anything (except coffee spills). Let's install `virtualenv` and navigate to where I want to work on the aircraft:
 
 ```bash
 $ sudo pip install virtualenv
@@ -153,8 +155,39 @@ $ source kontor_environment/bin/activate
 $ python ./test.py
 ```
 
-At this point we should have a nice error-less bunch of stuff.
+At this point we should have a nice error-less bunch of stuff. There's also an `api.py` file which adds a nice abstraction layer between the generated `vsp.py` file, which you might find useful. I placed it in my "package" in my environment so I can import it when working on projects with `from openvsp import api`. Before I forget, you may also remove the repository we cloned earlier. We no longer need it.
+
+```bash
+$ rm -rf ~/OpenVSP
+```
 
 # For Arch Linux users
 
-If you use Arch Linux, there is an easier way to compile everything. The OpenVSP package exists in the AUR. You can simply pull the PCKGBUILD file, edit it and install OpenVSP like any other package.
+If you use Arch Linux, there is an easier way to compile everything. The OpenVSP package exists in the AUR. You can simply pull the `PKGBUILD` file, edit it to contain the python environment variables we added above, as such:
+
+```bash
+cmake .. \
+        -DCMAKE_BUILD_TYPE=${_buildtype} \
+        -DCMAKE_PREFIX_PATH='/usr' \
+        -DVSP_USE_SYSTEM_CPPTEST=true \
+        -DVSP_USE_SYSTEM_LIBXML2=true \
+        -DVSP_USE_SYSTEM_EIGEN=true \
+        -DVSP_USE_SYSTEM_CODEELI=true \
+        -DVSP_USE_SYSTEM_FLTK=true \
+        -DVSP_USE_SYSTEM_GLM=true \
+        -DVSP_USE_SYSTEM_GLEW=true \
+        -DVSP_USE_SYSTEM_CMINPACK=true \
+        # SPECIFY YOUR PYTHON PATHS HERE
+        -DPYTHON_EXECUTABLE='/usr/bin/python3.8' \
+        -DPYTHON_LIBRARY='/usr/lib/python3.8' \
+        -DPYTHON_INCLUDE_DIR='/usr/include/python3.8' \
+        -DPYTHON_INCLUDE_PATH='/usr/include'
+```
+
+That should be enough to get you a compiled OpenVSP package, and an api wrapper for python. You still need to go fetch it, and add it somewhere you can use it after.
+
+#### Thanks!
+
+See my [previous](/post/using-git-version-control-to-design-an-airplane/) post 🙂
+
+-by Eduardo"
