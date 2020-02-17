@@ -188,6 +188,6 @@ That should be enough to get you a compiled OpenVSP package, and an api wrapper 
 
 #### Thanks!
 
-See my [previous](/post/using-git-version-control-to-design-an-airplane/) post 🙂
+See my [previous](/post/using-git-version-control-to-design-an-airplane/) and my [next](/post/using-ai-to-optimize-a-fuselage-part-one/) post 🙂
 
 -by Eduardo"
