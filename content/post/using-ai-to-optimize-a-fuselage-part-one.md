@@ -78,7 +78,7 @@ Looks very uncomplicated (and slightly unprofessional on my part, but you get th
 filename = 'path/to/our/vsp3/file.vsp3'
 
 t = 50      # number of iterations
-c = 1.001   # change factor (multiply values by this)
+c = 0.4   # change factor (multiply values by this + 1)
 
 h = 0         # current heuristic value
 old_h = None  # previous heuristic value
@@ -97,8 +97,6 @@ You'll notice that `t` and `c` are arbitrary. Figuring out what to set these var
 while t > 0:
     pass
     i = 0
-    # open file
-    model = VspModel(filename)
 
     base_sections = model['FuselageBase']['XSecCurve']
     tail_sections = model['TailFuselage']['XSecCurve']
@@ -109,7 +107,7 @@ while t > 0:
             pass
             if 'Width' in element:
                 pass
-                value = model['FuselageBase']['XSecCurve'][i][element]['value'] * c
+                value = model['FuselageBase']['XSecCurve'][i][element]['value'] * (c + 1)
                 id = model['FuselageBase']['XSecCurve'][i][element]['_id']
 
                 # sections connecting to the tail
@@ -120,7 +118,7 @@ while t > 0:
                     model.set_param(id=id, value=value)
 
             elif 'Height' in element:
-                value = model['FuselageBase']['XSecCurve'][i][element]['value'] * c
+                value = model['FuselageBase']['XSecCurve'][i][element]['value'] * (c + 1)
                 id = model['FuselageBase']['XSecCurve'][i][element]['_id']
 
                 # sections before nose
@@ -151,6 +149,8 @@ while t > 0:
                     model.set_param(id=id, value=value)
 
     model.save_file(filename=filename)
+    # open file
+    model = VspModel(filename)
     # run heuristic
     h = model.h()
     # if heuristic is better than before, continue. Else change direction
