@@ -1,6 +1,6 @@
 ---
 title: "Using Ai to Optimize a Fuselage Part Two"
-date: 2020-02-27T17:29:00-04:00
+date: 2020-04-04T12:29:00-04:00
 draft: false
 ---
 
