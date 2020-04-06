@@ -204,6 +204,6 @@ Which is sort of what we were expecting isn't it? It's as close as possible to t
 
 #### Thanks!
 
-See my [previous](/post/how-to-compile-openvsp-python-api/) post 🙂
+See my [previous](/post/how-to-compile-openvsp-python-api/) post and my [next](/post/using-ai-to-optimize-a-fuselage-part-two/) post 🙂
 
 -by Eduardo"
