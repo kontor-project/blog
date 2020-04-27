@@ -283,6 +283,6 @@ Let's talk about the size of the solution space. Watching the changes being done
 
 #### Thanks!
 
-See my [previous](/post/using-ai-to-optimize-a-fuselage-part-one/) post 🙂
+See my [previous](/post/using-ai-to-optimize-a-fuselage-part-one/) and my [next](/post/electric-powerplant-for-a-motorglider/) post 🙂
 
 -by Eduardo"
