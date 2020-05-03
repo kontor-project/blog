@@ -4,7 +4,7 @@ date: 2020-05-02T14:58:21-03:00
 draft: false
 ---
 
-Before we proceed to designing the wings of the Kontor, there are yet more questions to answer. Last week we determined what will power the aircraft. Today we will look at what the airframe will consist of. Disclaimer: I have never built anything out of composite materials, nor have I ever talked to an experienced person in the field. All I present here is data I found on the internet (mostly the [eea.org basic construction page](https://www.eaa.org/eaa/aircraft-building/BuilderResources/while-youre-building/building-articles/composite/building-composite-aircraft-part-1)).
+Before we proceed to designing the wings of the Kontor, there are yet more questions to answer. Last week we determined what will power the aircraft. Today we will look at what the airframe will consist of. Disclaimer: I have never built anything out of composite materials, nor have I ever talked to an experienced person in the field. All I present here is data I found on the internet (mostly the [eea.org basic composite construction page](https://www.eaa.org/eaa/aircraft-building/BuilderResources/while-youre-building/building-articles/composite/building-composite-aircraft-part-1)).
 
 There are many combinations of materials to build an aircraft, some are more efficient, some are less efficient. We could spend time exploring every possible combination, but this would take too long. Instead, let us look at which construction methods are most popular amongst glider builders. Since we are building an aircraft where we really care about energy efficiency, it makes sense that we look for materials that can handle energy efficiently. What makes gliders special compared to normal airplanes (other than the lack of a power source) is how much more efficient they are at conserving energy. It then follows that modern gliders have likely had the time to evolve into the most energy efficient flying machines that can fly on the Earth. Therefore, by mimicking a modern glider building process, it is likely that we can also achieve the most energy efficient airframe we can possibly build given the available resources. In the end, what will dictate which materials and methods we will chose, is the investment or infrastructure required for each.
 
@@ -19,17 +19,17 @@ The first few gliders were built out of wood, or steel tubes wrapped in fabric. 
 * Wood
 * Honeycomb
 
-The most common of these are foams. Core materials alone aren't enough to maintain the structure integrity; they are a bit like sponges. To hold everything together, the core is built inside a reinforcement "shell". This shell is responsible for most of the strength of the structure. The three main reinforcement materials:
+The most common of these are foams. Core materials alone aren't enough to maintain the structure integrity; they are a bit like sponges. To hold everything together, the core is built inside a reinforcement "shell". This shell is responsible for most of the strength of the structure. The three main reinforcement materials are:
 
 * Carbon fiber
 * Fiberglass
 * Kevlar
 
-In the end, you can think of the bond between core and reinforcement materials to be like a foam kiss
+In the end, you can think of the bond between core and reinforcement materials to be like a marshmallow dipped in chocolate:
 
 ![Image](/composite-aircraft-building-materials-and-methods/foam-kiss.jfif)
 
-The reinforcement materials come as some sort of cloth like structure, which needs to be molded into shape, and hardened. To solidify the reinforcement materials, resin is used. These are the resins used the most:
+The reinforcement materials are some sort of cloth like structure, which needs to be molded into shape, and hardened. To solidify the reinforcement materials, resin is used. These are the resins used the most:
 
 * Polyeseters (like the Bondo I used last week)
 * Vinyl esters
@@ -56,17 +56,17 @@ Now on to the real question:
 
 # What Is The Best Way To Get Rid Of A Cucumber?
 
-If you're like me, then you're probably not a great fan of the cucumber taste. But if you're like me you also enjoy Japanese food. So here's what you can do to turn a mediocre cucumber into a heavenly dish: after washing it, slice it as thinly as possible. This is a great way to train your chopping skills. Pat the sliced cucumber dry, and place in a bowl with about one part soy sauce and one part rice vinegar, just enough to soak the cucumber slices. Add some sesame seeds, red pepper flakes if you want spices, and some green onion. Let it sit for about 20min, and you've got yourself a delicious cucumber salad, reminiscent of Sunomono you can get at sushi restaurants.
+If you're like me, then you're probably not a great fan of the cucumber taste. But if you're like me you also enjoy Japanese food. So here's what you can do to turn a mediocre cucumber into a heavenly dish: after washing it, slice it as thinly as possible. This is a great way to train your chopping skills. Pat the sliced cucumber dry, and place in a bowl with about one part soy sauce and one part rice vinegar, just enough to soak the cucumber slices. Add some sesame seeds, red pepper flakes if you want it to be spicy, and some green onion. Let it sit for about 20min, and you've got yourself a delicious cucumber salad, reminiscent of Sunomono you can get at sushi restaurants.
 
 # What Method Should We Use?
 
-Most of the aircraft will consist of foam. The wings, rear end of the fuselage, and tail do not need to house anything other than the odd wire or cable to actuate control surfaces. This means that we can mold the almost entire structure out of foams. Which foam should we use? Great question. It seems like polyurethane and polyvinyl chloride are more common in aircraft construction, however polystyrene seems to be more readily available. Perhaps we can use polystyrene or the first few attempts at building composite structures.
+Most of the aircraft will consist of foam. The wings, rear end of the fuselage, and tail do not need to house anything other than the odd wire or cable to actuate control surfaces. This means that we can almost model the entire structure out of foams. Which foam should we use? Great question. It seems like polyurethane and polyvinyl chloride are more common in aircraft construction, however polystyrene seems to be more readily available. Perhaps we can use polystyrene or the first few attempts at building composite structures, and see where to go from there.
 
-While it is possible to build a negative mold for the outer shell, it seems like that will not be cost effective. It also seems like some builders are starting to opt for doing the layup on the core itself, leaving the core in. This works for small wings, but for large wings (such as a glider's), we might have to find a way to remove the core after the wing is built. But it is a lot easier to experiment with doing the layup on the core and leaving the core in, than to build a wing without a core. If doing the layup on a core structure just does not work, we can always try making a mold. So here's our next decision: the layup will be done on the core structure, and we will leave the core inside, unless we find the wings to be too heavy, in which case we might have to find a way to remove the cores.
+While it is possible to build a negative mold for the outer shell, it seems like that will not be cost effective. It also seems like some builders are starting to opt for doing the layup on the core itself, leaving the core in. This works for small wings, but for large wings (such as a glider's), we might have to find a way to remove the core after the wing is built. But it is a lot easier to experiment with doing the layup on the core and leaving the core in, than to build a wing without a core. If doing the layup on a core structure just does not work, we can always try making a mold. So here's our next decision: the layup will be done on the core structure, and we will leave the core inside, unless we find the wings to be too heavy, in which case we might have to find a way to remove the cores. There are chemicals out there that can eat up the foam without harming the shell.
 
 Different parts of the aircraft will be subject to different conditions. The fuselage in general should be stiff and lightweight. We don't want a wobbly tail, and we don't really want the rear end of the fuselage weighing anything at all. This seems to suggest that we use carbon fiber for the fuselage.
 
-If you've ever seen a picture of a glider flying versus a glider on the ground, you have a basic idea of how much the wings of a glider can flex. Fiberglass is far more flexible than carbon fiber, so it makes more sense to use fiberglass for the wings (even if fiberglass has a higher density). This could change if the wings turn out too heavy and frail.
+If you've ever seen a picture of a glider flying versus a glider on the ground, you have a basic idea of how much the wings can flex. Fiberglass is far more flexible than carbon fiber, so it makes more sense to use fiberglass for the wings (even if fiberglass has a higher density). This could change if the wings turn out too heavy and frail.
 
 Finally, we need to decide on a kind of resin. It seems clear that epoxies are the friendliest resin to use when building with a foam-core lightweight structure (such as an airplane). So it's safe to say we'll use epoxy for the resin.
 
@@ -90,9 +90,9 @@ This means that the empennage, tail fuselage, and fuselage need to be bound toge
 
 **The elevators** are a bit more complex. Gliders need to maintain a sleek profile as much as possible, so there are no cables hooked up to the elevators as you would see in most small aircraft (especially old airplanes). Most gliders use a rod to move the elevators up or down. This rod is directly connected to the stick.
 
-**The ailerons** are hooked up in a similar way as the elevators, in the sense that they are not actuated by cables. Generally, the ailerons' axle goes to the fuselage, where it is actuated by a rod. This eliminates the need for cables. It seems complicated, but it is nothing that cannot be explored with a good set of Lego Technic.
+**The ailerons** are hooked up in a similar way as the elevators, in the sense that they are not actuated by cables. Generally, the ailerons' axle extends to the fuselage, where it is actuated by a rod. This eliminates the need for cables. It seems complicated, but it is nothing that cannot be explored with a good set of Lego Technic.
 
-One important thing to note, is that under the European regulation, gliders wings that can be taken apart must be able to only fit in the correct position. This prevents the wings from being placed up-side down, or the wrong way round. It is also required that the control surface mechanism automatically connect itself upon assembly. That prevents rushed glider pilots from accidentally taking off with no controls. If we want the Kontor to fly in Europe, we need to make sure our design adheres to these regulations.
+One important thing to note, is that under the European regulation, gliders' wings that can be taken apart must be able to fit only in the correct position. This prevents the wings from being placed up-side down, or the wrong way round. It is also required that the control surface mechanism automatically connect itself upon assembly. That prevents rushed glider pilots from accidentally taking off with no controls. If we want the Kontor to fly in Europe, we need to make sure our design adheres to these regulations.
 
 # Homework
 
