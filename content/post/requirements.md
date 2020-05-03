@@ -16,21 +16,18 @@ These requirements focus on the aircraft itself, and its functionality
 
 * adhere to the EU and US definition of a motor glider
 * powered by a single electric motor
-* battery time must last at least 2h at 100% power
+* battery time must last at least 30min at 100% power
 * have removable batteries
 * transponder and two way radio to enable up to B class clearance
 * minimum of 20:1 glide ratio
 * runway taxi-able landing gear configuration
+* two seats (in tandem configuration)
 
 ### Optional Requirements
 
 * foldable propeller for reduced drag
 * retractable landing gear **OR** configurable landing gear configuration (tricycle, tail-dragger, monowheel, etc...)
 * removable wings for transportation
-
-### Plebian Requirements
-
-* two seats (in tandem configuration)
 
 ## Project Requirements
 
