@@ -134,4 +134,4 @@ Yes, absolutely. In fact, I have a [world in Minecraft](https://github.com/mregg
 
 See my [previous](/post/hello-world/) post and my [next](/post/how-to-compile-openvsp-python-api/) post 🙂
 
-- by Eduardo"
+-by Eduardo"

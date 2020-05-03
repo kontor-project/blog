@@ -20,17 +20,19 @@ This phase focuses on the conception of the aircraft alone. The main subject of 
 
 Below we have a table of milestones associated with dates and a definition of done
 
-| Start Date & End Date | Objective | Definition of Done |
-| --  | -- | -- |
-| 01.01.2020  **15.01.2020** | Create project organization and repositories | A public organization in github, with at least 1 repository (for the aircraft design)|
-| 15.01.2020  **01.02.2020** | Create the first 3D model of the aircraft | A rudimentary 3D model|
-| 01.02.2020  **undefined** | Spread the word! Share the project with different communities | Public knowledge of the project, at least 3 other contributors |
-| 01.03.2020  **15.03.2020** | Review powerplant layouts and battery options | A list of motor and battery options for the aircraft |
-| 01.03.2020  **01.04.2020** | Optimize model using aerodynamic simulation tools | A software optimized aircraft model |
-| 15.03.2020  **15.04.2020** | Aircraft building materials study | A set of materials used for the aircraft construction |
-| 01.05.2020  **01.07.2020** | Construction of the first model aircraft using materials chosen | A scale model of the aircraft design, fully functional |
-| 01.07.2020  **01.08.2020** | Construction of a second model aircraft based on any feedback from the first | A scale model with improvements made over the first model |
-| 10.06.2020  **15.06.2020** | Compute the total cost of the aircraft | A spreadsheet or report containing the total cost of the aircraft
+| Start Date & End Date | Objective | Definition of Done | Status |
+| --  | -- | -- | -- |
+| 01.01.2020  **15.01.2020** | Create project organization and repositories | A public organization in github, with at least 1 repository (for the aircraft design) | ✔️
+| 15.01.2020  **01.02.2020** | Create the first 3D model of the aircraft | A rudimentary 3D model | ✔️
+| 01.02.2020  **undefined** | Spread the word! Share the project with different communities | Public knowledge of the project, at least 3 other contributors | 😴
+| 01.04.2020  **15.03.2020** | Review powerplant layouts and battery options | A list of motor and battery options for the aircraft | ✔️
+| 01.02.2020  **01.06.2020** | Optimize model using aerodynamic simulation tools | A software optimized aircraft model | ⏳
+| 15.03.2020  **10.05.2020** | Aircraft building materials study | A set of materials used for the aircraft construction | ⏳
+| 01.05.2020  **01.07.2020** | Construction of the first model aircraft using materials chosen | A scale model of the aircraft design, fully functional | 😴
+| 01.07.2020  **01.08.2020** | Construction of a second model aircraft based on any feedback from the first | A scale model with improvements made over the first model | 😴
+| 10.06.2020  **15.08.2020** | Compute the total cost of the aircraft | A spreadsheet or report containing the total cost of the aircraft | 😴
+
+Where ✔️ means "done", ⏳ means "in progress", 😴 means "not started"
 
 ## Phase Two
 
