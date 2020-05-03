@@ -64,6 +64,6 @@ Based on these points, we can also plan the next few steps:
 
 #### Thanks!
 
-See my [previous](/post/using-ai-to-optimize-a-fuselage-part-two/) and my [next](composite-aircraft-building-materials-and-methods) post 🙂
+See my [previous](/post/using-ai-to-optimize-a-fuselage-part-two/) and my [next](composite-aircraft-building-materials-and-methods/) post 🙂
 
 -by Eduardo"
